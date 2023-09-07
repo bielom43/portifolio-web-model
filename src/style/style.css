@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+
+:root{
+  --primary-color: #213555;
+  --secondary-color: #F0F0F0;
+  --third-color: #E5D283;
+  --hover-color: #4F709C;
+
+  --primary-font: "Krona One", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.header-links{
+  padding: 4% 0% 0% 15%;
+}
+
+.header-links-menu{
+  display: flex;
+  gap: 80px;
+}
+
+.header-links-menu-link {
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--third-color);
+
+}
+
+
+.flex-presentation {
+  padding: 8% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tittle-highlight {
+  color: var(--third-color);
+}
+
+.presentation-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 593px;
+}
+
+.presentation-tittle {
+  font-size: 36px;
+  font-family: var(--primary-font);
+}
+
+.presentation-content-paragraph {
+  font-size: 24px;
+  font-family: var(--secondary-font);
+}
+
+.presentation-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.presentation-links-link {
+  /* background-color: var(--third-color); */
+  gap: 16px;
+  width: 378px;
+  border-radius: 8px;
+  padding: 21.5px 0px;
+  border-radius: 16px;
+  border: 2px solid var(--third-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--secondary-font);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--secondary-color);
+}
+
+.presentation-links-link:hover {
+  background: var(--hover-color);
+}
+
+.presentation-links-subtittle {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.presentation-footer {
+  background: var(--third-color);
+  color: var(--primary-color);
+  padding: 24px;
+  text-align: center;
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  font-weight: 400;
+}
+
