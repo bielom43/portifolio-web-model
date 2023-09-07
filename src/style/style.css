@@ -23,7 +23,7 @@ body {
 }
 
 .header-links{
-  padding: 4% 0% 0% 15%;
+  padding: 2% 0% 0% 15%;
 }
 
 .header-links-menu{
@@ -34,17 +34,18 @@ body {
 .header-links-menu-link {
   font-family: var(--secondary-font);
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: var(--third-color);
 
 }
 
 
 .flex-presentation {
-  padding: 8% 15%;
+  padding: 5% 15%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 82px;
 }
 
 .tittle-highlight {
@@ -55,16 +56,16 @@ body {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  width: 593px;
+  width: 50%;
 }
 
 .presentation-tittle {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-family: var(--primary-font);
 }
 
 .presentation-content-paragraph {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: var(--secondary-font);
 }
 
@@ -76,21 +77,21 @@ body {
   gap: 32px;
 }
 
-.presentation-links-link {
+.presentation-links-navigation {
   /* background-color: var(--third-color); */
   gap: 16px;
-  width: 378px;
+  width: 50%;
   border-radius: 8px;
   padding: 21.5px 0px;
   border-radius: 16px;
   border: 2px solid var(--third-color);
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   font-family: var(--secondary-font);
   text-decoration: none;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: var(--secondary-color);
 }
 
@@ -101,7 +102,7 @@ body {
 .presentation-links-subtittle {
   font-family: var(--primary-font);
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .presentation-footer {
@@ -110,7 +111,30 @@ body {
   padding: 24px;
   text-align: center;
   font-family: var(--secondary-font);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
+.presentation-image {
+  width: 50%;
+}
+
+@media (max-width: 1200px) {
+  .flex-presentation {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .presentation-content {
+    width: auto;
+  }
+
+  .header-links{
+    padding: 10%;
+  }
+
+  .header-links-menu {
+    justify-content: center;
+
+  }
+}
